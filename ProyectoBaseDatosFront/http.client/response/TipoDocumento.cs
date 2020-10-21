@@ -6,7 +6,14 @@ namespace ProyectoBaseDatosFront.http.client.response{
         public int Codigo { get; set; } 
 
         [JsonProperty("nombre")]
-        public string Nombre { get; set; } 
+        public string Nombre { get; set; }
+
+
+        public override string ToString()
+        {
+            return this.Nombre;
+        }
+
     }
 
 }
