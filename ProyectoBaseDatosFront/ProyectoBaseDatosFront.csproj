@@ -111,6 +111,7 @@
     <Compile Include="http.client\response\Provincia.cs" />
     <Compile Include="http.client\response\Paciente.cs" />
     <Compile Include="http.client\response\TipoDocumento.cs" />
+    <Compile Include="http.client\response\Trabajador.cs" />
     <Compile Include="http.client\response\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,6 +126,12 @@
     </Compile>
     <Compile Include="views\FrmPaciente.Designer.cs">
       <DependentUpon>FrmPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\FrmTrabajador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\FrmTrabajador.Designer.cs">
+      <DependentUpon>FrmTrabajador.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -143,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmPaciente.resx">
       <DependentUpon>FrmPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\FrmTrabajador.resx">
+      <DependentUpon>FrmTrabajador.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

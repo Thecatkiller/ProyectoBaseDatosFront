@@ -38,6 +38,12 @@
             this.colEdad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCelular = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +62,7 @@
             this.colCelular});
             this.dgvPacientes.Location = new System.Drawing.Point(12, 37);
             this.dgvPacientes.Name = "dgvPacientes";
-            this.dgvPacientes.Size = new System.Drawing.Size(1049, 510);
+            this.dgvPacientes.Size = new System.Drawing.Size(950, 510);
             this.dgvPacientes.TabIndex = 0;
             // 
             // colCodigo
@@ -104,17 +110,73 @@
             this.colCelular.HeaderText = "Celular";
             this.colCelular.Name = "colCelular";
             // 
+            // txtNombres
+            // 
+            this.txtNombres.Location = new System.Drawing.Point(985, 53);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(182, 20);
+            this.txtNombres.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(982, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Nombres:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(982, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Apellidos:";
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.Location = new System.Drawing.Point(985, 99);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(182, 20);
+            this.txtApellidos.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(982, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Tipo documento:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(985, 147);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(182, 21);
+            this.comboBox1.TabIndex = 7;
+            // 
             // FrmPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 547);
+            this.ClientSize = new System.Drawing.Size(1186, 574);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtApellidos);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtNombres);
             this.Controls.Add(this.dgvPacientes);
             this.Name = "FrmPaciente";
             this.Text = "FrmPaciente";
             this.Load += new System.EventHandler(this.FrmPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -130,5 +192,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colEdad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCorreo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCelular;
+        private System.Windows.Forms.TextBox txtNombres;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -21,6 +21,7 @@ namespace ProyectoBaseDatosFront.views
 
         private async void FrmPaciente_Load(object sender, EventArgs e)
         {
+           
             ClientApi api = new ClientApi("paciente");
             List<Paciente> pacientes = await api.SendGet<List<Paciente>>();
 

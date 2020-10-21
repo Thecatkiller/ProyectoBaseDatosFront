@@ -27,5 +27,11 @@ namespace ProyectoBaseDatosFront.views
             FrmPaciente frmPaciente = new FrmPaciente();
             frmPaciente.Show();
         }
+
+        private void btnTrabajadores_Click(object sender, EventArgs e)
+        {
+            FrmTrabajador x = new FrmTrabajador();
+            x.Show();
+        }
     }
 }
