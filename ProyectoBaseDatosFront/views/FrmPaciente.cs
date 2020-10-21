@@ -22,15 +22,21 @@ namespace ProyectoBaseDatosFront.views
         private async void FrmPaciente_Load(object sender, EventArgs e)
         {
             ClientApi api = new ClientApi("paciente");
-            List<Persona> pacientes = await api.SendGet<List<Persona>>();
-
+            List<Paciente> pacientes = await api.SendGet<List<Paciente>>();
 
             pacientes.ForEach(x =>
-                dgvPacientes.Rows.Add(x.numeroDocumento, x.nombres, x.apellidos)
+                dgvPacientes.Rows.Add(
+                    x.Codigo,
+                    x.Nombres,
+                    x.Apellidos,
+                    x.TipoDocumento.Nombre + "-" + x.NumeroDocumento,
+                    x.Sexo,
+                    x.GrupoSanguineo?.Nombre,
+                    x.GetEdad(),
+                    x.DatosContacto?.Correo,
+                    x.DatosContacto?.Celular
+                    )
             );
-
-
-
         }
     }
 }
